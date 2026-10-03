@@ -378,45 +378,38 @@ button:hover {
 }
 
 
-/* Proposal buttons */
-
 .proposal-buttons {
-
     display: flex;
-
-    justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
-
-    flex-wrap: wrap;
-
     margin-top: 30px;
-
+    width: 100%;
 }
 
-
 .proposal-buttons button {
-    position: static;
+    position: relative;
+    left: auto;
+    top: auto;
     transform: none;
 
+    display: block;
+    width: 100%;
+    max-width: 280px;
+
     background: #ff5c8a;
-
     border: none;
-
     color: white;
 
-    padding: 15px 25px;
-
+    padding: 15px 20px;
     border-radius: 15px;
 
     font-size: 16px;
-
     font-weight: bold;
 
     cursor: pointer;
 
-    box-shadow:
-        0 8px 20px rgba(255, 92, 138, 0.25);
+    box-shadow: 0 8px 20px rgba(255, 92, 138, 0.25);
 }
 
 .proposal-buttons button:hover {
@@ -446,39 +439,38 @@ button:hover {
 
 
 @media (max-width: 600px) {
-
     .proposal-page {
-
         padding: 15px;
-
+        min-height: 100vh;
     }
-
 
     .proposal-card {
-
-        padding: 35px 22px;
-
+        padding: 35px 20px;
+        width: 100%;
     }
-
 
     .proposal-card h1 {
-
         font-size: 26px;
-
     }
-
 
     .proposal-card h2 {
-
         font-size: 23px;
-
     }
-
 
     .proposal-text {
-
         font-size: 16px;
-
     }
 
+    .proposal-buttons {
+        width: 100%;
+    }
+
+    .proposal-buttons button {
+        width: 100%;
+        max-width: 280px;
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+    }
 }
