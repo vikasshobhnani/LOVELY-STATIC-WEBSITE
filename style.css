@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ffe6ee,
+        #fff5f8,
+        #ffeef4
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* Main container */
+
+.container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Card */
+
+.card {
+    width: 100%;
+    max-width: 480px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    padding: 45px 35px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(214, 90, 130, 0.18);
+
+    position: relative;
+}
+
+
+/* Top heart */
+
+.top-heart {
+    font-size: 45px;
+    color: #ff5c8a;
+
+    margin-bottom: 15px;
+}
+
+
+/* Heading */
+
+h1 {
+    color: #d83b6b;
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Subtitle */
+
+.subtitle {
+    color: #777;
+
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Question */
+
+.question {
+    color: #333;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+/* Input */
+
+input {
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 2px solid #ffd0dd;
+
+    border-radius: 15px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    text-align: center;
+
+    color: #444;
+
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: #ff6f9c;
+}
+
+
+/* Button area */
+
+.button-area {
+    position: relative;
+
+    width: 100%;
+
+    height: 60px;
+
+    margin-top: 20px;
+}
+
+
+/* Submit button */
+
+button {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 15px;
+
+    background: #ff5c8a;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(255, 92, 138, 0.25);
+
+    transition:
+        left 0.15s ease,
+        top 0.15s ease,
+        transform 0.15s ease;
+}
+
+
+/* Button hover */
+
+button:hover {
+    background: #f4487a;
+}
+
+
+/* Message */
+
+.message {
+    min-height: 50px;
+
+    margin-top: 20px;
+
+    padding: 10px;
+
+    color: #d83b6b;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    line-height: 1.5;
+}
+
+
+/* Floating hearts */
+
+.hearts span {
+    position: absolute;
+
+    color: rgba(255, 92, 138, 0.18);
+
+    font-size: 35px;
+
+    pointer-events: none;
+}
+
+
+/* Different positions */
+
+.hearts span:nth-child(1) {
+    top: 10%;
+    left: 10%;
+}
+
+.hearts span:nth-child(2) {
+    top: 20%;
+    right: 12%;
+}
+
+.hearts span:nth-child(3) {
+    bottom: 15%;
+    left: 15%;
+}
+
+.hearts span:nth-child(4) {
+    bottom: 10%;
+    right: 10%;
+}
+
+.hearts span:nth-child(5) {
+    top: 40%;
+    left: 5%;
+}
+
+.hearts span:nth-child(6) {
+    top: 50%;
+    right: 5%;
+}
+
+.hearts span:nth-child(7) {
+    bottom: 30%;
+    left: 30%;
+}
+
+.hearts span:nth-child(8) {
+    top: 30%;
+    right: 30%;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .card {
+        padding: 35px 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+
+}
+
+/* =====================================================
+   PROPOSAL PAGE
+   ===================================================== */
+
+.proposal-page {
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ffe6ee,
+        #fff5f8,
+        #ffeef4
+    );
+
+}
+
+
+.proposal-card {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    background: white;
+
+    padding: 50px 40px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px rgba(214, 90, 130, 0.20);
+
+}
+
+
+.proposal-heart {
+
+    font-size: 60px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.proposal-card h1 {
+
+    color: #d83b6b;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.proposal-card h2 {
+
+    color: #d83b6b;
+
+    font-size: 28px;
+
+    margin: 30px 0;
+
+}
+
+
+.proposal-intro {
+
+    color: #777;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+
+}
+
+
+.proposal-text {
+
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Proposal buttons */
+
+.proposal-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+
+}
+
+
+.proposal-buttons button {
+    position: static;
+    transform: none;
+
+    background: #ff5c8a;
+
+    border: none;
+
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 15px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(255, 92, 138, 0.25);
+}
+
+.proposal-buttons button:hover {
+    background: #f4487a;
+}
+
+#finalMessage {
+
+    margin-top: 25px;
+
+    color: #d83b6b;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+.big-heart {
+
+    font-size: 80px;
+
+    margin-top: 25px;
+
+}
+
+
+@media (max-width: 600px) {
+
+    .proposal-page {
+
+        padding: 15px;
+
+    }
+
+
+    .proposal-card {
+
+        padding: 35px 22px;
+
+    }
+
+
+    .proposal-card h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    .proposal-card h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .proposal-text {
+
+        font-size: 16px;
+
+    }
+
+}
