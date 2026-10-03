@@ -7,19 +7,12 @@
 body {
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-
-    background: linear-gradient(
-        135deg,
-        #ffe6ee,
-        #fff5f8,
-        #ffeef4
-    );
-
+    background: linear-gradient(135deg, #ffe6ee, #fff5f8, #ffeef4);
     display: flex;
     justify-content: center;
     align-items: center;
-
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 
@@ -278,26 +271,13 @@ button:hover {
    ===================================================== */
 
 .proposal-page {
-
     min-height: 100vh;
-
     width: 100%;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
-    padding: 30px;
-
-    background: linear-gradient(
-        135deg,
-        #ffe6ee,
-        #fff5f8,
-        #ffeef4
-    );
-
+    padding: 30px 15px;
+    background: linear-gradient(135deg, #ffe6ee, #fff5f8, #ffeef4);
 }
 
 
@@ -437,40 +417,75 @@ button:hover {
 
 }
 
-
 @media (max-width: 600px) {
     .proposal-page {
-        padding: 15px;
         min-height: 100vh;
+        height: auto;
+        padding: 30px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .proposal-card {
-        padding: 35px 20px;
         width: 100%;
+        max-width: 100%;
+        padding: 35px 20px;
+        margin: 20px 0;
+    }
+
+    .proposal-heart {
+        font-size: 50px;
+        margin-bottom: 15px;
     }
 
     .proposal-card h1 {
         font-size: 26px;
+        line-height: 1.3;
     }
 
     .proposal-card h2 {
         font-size: 23px;
+        line-height: 1.4;
+        margin: 25px 0;
+    }
+
+    .proposal-intro {
+        font-size: 16px;
+        line-height: 1.6;
     }
 
     .proposal-text {
         font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 18px;
     }
 
     .proposal-buttons {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 25px;
     }
 
     .proposal-buttons button {
-        width: 100%;
-        max-width: 280px;
         position: relative;
         left: auto;
         top: auto;
         transform: none;
+
+        display: block;
+        width: 100%;
+        max-width: 280px;
+
+        padding: 15px 18px;
+        font-size: 15px;
+    }
+
+    .big-heart {
+        font-size: 65px;
+        margin-top: 20px;
     }
 }
